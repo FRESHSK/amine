@@ -1,0 +1,124 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+html{
+  background-color: aqua;
+} 
+body{
+  background-color: #FFD700;
+  height: 900px;
+}
+
+header {
+  background: #360568;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+  
+  }
+  nav {
+    margin: 0;
+    text-align: center;
+    
+  }
+  .barrenav ul li {
+    
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+  .barrenav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .barrenav ul li a.active {
+    color: #FFD700; /* Example: Gold color for active links */
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+  
+ 
+  main {
+    font-family: Roboto;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    background: #076d42;
+    position: relative;
+    top: 80px;
+    min-height: 300px;
+    max-height: 1800%;
+
+  }
+  p.skills{
+    font-family: Roboto;
+    color: #B75BC6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+a {
+    color: white;
+}
+.present p {
+  margin : 20px;
+}
+
+.content div {
+    border-radius: 10px;
+    padding : 20px 30px;
+    margin: 20px;
+    display: inline-block;
+    width: 40%;
+    border-radius: 15px;
+    background: #3E206E;
+    text-align: left;
+}
+
+.contactme{
+  height: 400px;
+}
+
+.content p{
+  text-align:left;
+}
+
+.profilimage {
+    border: 2px solid black;
+    border-radius: 5px;
+    border-bottom-right-radius: 40px; 
+}
+footer div{
+    text-align: center;
+    background: #360568;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+
+}
+img {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px 20px;
+}
+
+.fidele {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  color: black;
+  z-index: 20;
+}
+
+section {
+  padding-bottom: 30px;
+}

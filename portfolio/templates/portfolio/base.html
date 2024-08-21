@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    {% block head %} 
+    {% endblock %}
+
+    <link href="{% static "portfolio/css/style.css" %}" type="text/css"  rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="barrenav">
+        <ul>
+          <li><a href="{% url 'home' %}" class="{% if request.path == '/home/' %}active{% endif %}">Home</a></li>
+          <li><a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}">About</a></li>
+          <li><a href="{% url 'projects' %}" class="{% if request.path == '/projects/' %}active{% endif %}">Projects</a></li>
+        </ul>
+       </nav>
+      </header>
+      
+    {% block content %}
+    {% endblock %}
+   
+  </body>
+  <footer>
+    <div>
+      <img src="{% static 'portfolio/images/linkedinicon.webp' %}" />
+      <img src="{% static 'portfolio/images/mediumicon.svg' %}" width="150" height="150"/>
+      <img src="{% static 'portfolio/images/twittericon.webp' %}" />
+      </footer>
+    </div>
+  
+</html>

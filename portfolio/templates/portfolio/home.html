@@ -1,0 +1,36 @@
+{% extends "portfolio/base.html" %} 
+{% load static %}
+{% block head %}
+<title>home</title>
+{% endblock %}
+{% block content %}
+
+
+  <main>  
+    <div class="present">
+       <img class="profilimage" src="{% static 'portfolio/images/Amine.png' %}" alt="Amine BENKHADDA" width="200" height="240" />
+       <h1>Amine BEN KHADDA</h1>
+       <p class="skills">Consultant Engineer | Data Science | Full stack developer</p>
+    </div >
+    <section class="content">
+    <div >
+        <h3> <span>👤 </span>About me</h3>
+        <p>I am an experienced consultant engineer with a passion for creating elegant solutions to complex problems. With a strong background in engineering and technology, I thrive in dynamic environments where innovation and efficiency are paramount. My expertise spans multiple domains, enabling me to deliver robust and scalable solutions. I am dedicated to continuous learning and staying updated with the latest industry trends. My goal is to deliver high-quality, client-centric services that meet and exceed expectations. I am committed to collaboration and believe in the power of teamwork to achieve remarkable results.</p>
+    </div>
+        <div >
+       <h3> <span>🛠️</span> Projects</h3>
+        <p>Explore some of the projects I've successfully completed throughout my career. These include designing and implementing scalable projects, developing custom solutions, and optimizing complex systems for enhanced performance. I've led cross-functional teams in delivering innovative projects on time and within budget. My work in the automotive industry includes projects such as SWEET400/410, where I played a key role in various diversities like X1310. Each project highlights my commitment to excellence and my ability to solve challenging problems with effective solutions.</p>
+    </div >
+    <div class="contactme" >
+       <h3 ><span>✉️</span> Contact</h3>
+        <p>I'm always eager to explore new opportunities and collaborate on exciting projects.<br> Whether you have a project in mind or just want to connect, I'd love to hear from you. Feel free to reach out, and let's discuss how we can work together. Your message is always welcome!</p>
+        {% block form %}
+        {% endblock %}
+      </div>
+    </section>
+  </main>
+    
+
+   
+
+{% endblock %} 

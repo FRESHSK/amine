@@ -1,0 +1,16 @@
+
+{% extends "portfolio/home.html" %} 
+
+{% block form %}
+<section>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button > Send</button>
+    </form>
+</section>
+{% endblock %}       
+  
+   
+
+
